@@ -14,8 +14,45 @@
 </head>
 <body>
 
+<!--Start Modal-->
+
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Let us know who you are</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form role="form" id="sign-up-form">
+                            <div class="form-group row">
+                                <label for="name-input">Name:</label>
+                                <input class="form-control" id="name-input" type="text" placeholder="enter your name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email-input">Email:</label>
+                                <input class="form-control" id="email-input" type="email" placeholder="enter your e-mail" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="zipcode-input">Zipcode:</label>
+                                <input class="form-control" id="zipcode-input" type="number" placeholder="enter your zipcode" required>
+                            </div>
+                            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                    </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
  
  <!-- Local scripting -->
  <!-- Bootstrap jQuery -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
 </body>

@@ -10,24 +10,28 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <!-- Local styling -->
+        <link rel="stylesheet" href="assets/css/style.css">
         <!-- Bootstrap jQuery -->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
 </head>
 <body>
     <div class=container>
             <br>
             <br>
-            <div class="row align-items-center justify-content-center">
-            <button type="button" class="btn btn-primary btn-lg" id="vol" data-toggle="modal" data-target="#myModal">Volunteer</button>
+            <div class="jumbotron">
+                <h1 class="display-4">Volorg</h1>
+                <div class="row align-items-center justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg" id="vol" data-toggle="modal" data-target="#volModal">Volunteer</button>
            
-            <button type="button" class="btn btn-secondary btn-lg" id="org">Organization</button>
+                <button type="button" class="btn btn-secondary btn-lg" id="org" data-toggle="modal" data-target="#orgModal">Organization</button>
+                </div>
             </div>
   </div>
 
-<!--Start Modal-->
+<!--Volunteer Modal-->
 
-<div class="modal" tabindex="-1" role="dialog" id="myModal">
+<div class="modal" tabindex="-1" role="dialog" id="volModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -50,7 +54,6 @@
                                 <label for="zipcode-input">Zipcode:</label>
                                 <input class="form-control" id="zipcode-input" type="number" placeholder="enter your zipcode" required>
                             </div>
-                            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
                     </form>
             </div>
             <div class="modal-footer">
@@ -61,7 +64,40 @@
     </div>
 </div>
  
- <!-- Local scripting -->
+ <!-- Organization Modal -->
  
+ <div class="modal" tabindex="-1" role="dialog" id="orgModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sign In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form role="form" id="sign-up-form">
+                                <div class="form-group row">
+                                    <label for="name-input">Organization Name:</label>
+                                    <input class="form-control" id="name-input" type="text" placeholder="enter your name" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email-input">Email:</label>
+                                    <input class="form-control" id="email-input" type="email" placeholder="enter your e-mail" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="zipcode-input">Zipcode:</label>
+                                    <input class="form-control" id="zipcode-input" type="number" placeholder="enter your zipcode" required>
+                                </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>   
 </html>

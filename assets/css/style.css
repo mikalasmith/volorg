@@ -1,1 +1,79 @@
+#navbarNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Comfortaa', cursive;
+}
 
+.navbar-brand{
+    font-family: 'Comfortaa', cursive;
+}
+
+.section1{
+    background: url("../img/teamwork.jpg");
+    height: 750px;
+}
+
+.section2{
+    height:750px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#vol{
+    margin-right: 10px;
+    background: limegreen;
+    font-family: 'Comfortaa', cursive;
+}
+
+#org{
+    margin-left: 10px;
+    background: limegreen;
+    font-family: 'Comfortaa', cursive;
+}
+
+.welcome h1{
+    color: #ffbd4a;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.welcome p{
+    display: flex;
+    justify-content: center;
+}
+
+#stuff{
+    margin: auto;
+    width: 50%;
+    padding: 60px;
+    margin-top: 120px;
+    border-radius: 25px;
+    background-color: white;
+    background-size: 10%;
+    opacity: .9; 
+}
+
+.navbar{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    font-size: 18px;
+    box-shadow: 0 4px 2px -2px gray;
+}

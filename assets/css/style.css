@@ -192,3 +192,13 @@ body{
  .event button{
      margin-right: 40px;
  }
+
+  .collapsible {
+    font-family: 'Comfortaa', cursive;
+  }
+   
+ .test {
+    display: inline-flex;
+    justify-content: flex-start; 
+     
+}

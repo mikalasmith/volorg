@@ -193,9 +193,6 @@ body{
      margin-right: 40px;
  }
 
-    color: black;
-  }
-
   .collapsible {
     font-family: 'Comfortaa', cursive;
   }
@@ -203,5 +200,11 @@ body{
  .test {
     display: inline-flex;
     justify-content: flex-start; 
-     
+ 
+}
+
+.signUp{
+    margin-right: 10px;
+    background: limegreen;
+    font-family: 'Comfortaa', cursive;
 }

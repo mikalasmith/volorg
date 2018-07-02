@@ -21,6 +21,8 @@
 </head>
 <body>
 
+<div class="container-fluid">
+    <div class="col-xs-12">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
                 <div>
                     <img src="assets/img/volunteerHands.png" id="bgimg">
@@ -32,9 +34,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <!--{{#if isAuthenticated}}-->
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">About Us |</a>
+                            <a class="nav-link" href="./index.html">Home |</a>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="./profile.html">Profile |</a>
+                        </li>
+                            <li class="nav-item">
                         <li class="nav-item">
                             <a class="nav-link" href="./opps.html">Find Opportunities |</a>
                         </li>
@@ -42,59 +49,69 @@
                             <a class="nav-link" href="#">Post Opportunities |</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#">Register |</a>
+                                <a class="nav-link" href="#">Log Out</a>
+                        </li>
+                        <!--{{else}}
+                        <li class="nav-item">
+                                <a class="nav-link" href="./index.html">About Us |</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="#">Sign-In</a>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Register |</a>
+                        </li>
+                        {{/if}}-->
                     </ul>
                 </div>
             </nav>
+</div>
 
- <div class="search">
-     <h3>Where do you want to volunteer?</h3>
-     <div class="searchBox">
-            <div id="searchSubmit">
-                <label for="zipcode-input" id="zipcode"><p>City:</p></label>
+<div class="search1">
+<div class="row">
+    <div class="back">
+    <div class="col-sm-12">
+        <h3>Where do you want to volunteer?</h3>
+        <div class="row">
+            <div class="col-6 col-sm-4">
+                <label for="zipcode-input" id="zipcode"><p>Zipcode:</p></label>
                 <input class="form-control" id="zipcode-input" type="number" required>
+            </div>
+            <div class="col-4 col-sm-6">
                 <i class="fas fa-angle-double-right rightArrow"></i>
             </div>
+        </div>
     </div>
- </div>
+    </div>
+</div>
+</div>
 
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
+<div class="event">
+    <div class="row">
+        <div class="col-sm"><h4>Event</h4></div>
+        <div class="col-sm"><p>Organization</p></div>
+        <div class="col-sm"><p>Date,Time</p></div>
+        <div class="col-sm"><button type="button" class="btn btn-lg signUp greenButton">Sign Up!</button></div>
+    </div>
+</div>
 
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
+<div class="event">
+    <div class="row">
+        <div class="col-sm"><h4>Event</h4></div>
+        <div class="col-sm"><p>Organization</p></div>
+        <div class="col-sm"><p>Date,Time</p></div>
+        <div class="col-sm"><button type="button" class="btn btn-lg signUp greenButton">Sign Up!</button></div>
+    </div>
+</div>
 
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
+<div class="event">
+    <div class="row">
+        <div class="col-sm"><h4>Event</h4></div>
+        <div class="col-sm"><p>Organization</p></div>
+        <div class="col-sm"><p>Date,Time</p></div>
+        <div class="col-sm"><button type="button" class="btn btn-lg signUp greenButton">Sign Up!</button></div>
+    </div>
+</div>
 
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
-
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
-
- <div class="event">
-        <h4>Event</h4>
-        <p>Date, time</p>
-        <button type="button" class="btn btn-lg signUp">Sign Up!</button>
- </div>
+</div>
 </body>
